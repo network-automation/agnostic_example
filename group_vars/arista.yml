@@ -1,1 +1,2 @@
 show_interfaces: "show ip interface brief"
+backup: "show running-config"

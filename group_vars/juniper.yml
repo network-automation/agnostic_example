@@ -1,1 +1,2 @@
 show_interfaces: "show interface terse"
+backup: "show configuration"

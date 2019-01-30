@@ -1,0 +1,16 @@
+---
+- name: BACKUP ALL CONFIGS
+  hosts: routers
+  gather_facts: false
+
+  tasks:
+
+    - name: RETRIEVE CONFIGURATION
+      cli_command:
+        command: "{{backup}}"
+      register: backup
+
+    - name: PRINT TO TERMINAL WINDOW
+      copy:
+        content: "{{backup.stdout}}"
+        dest: "{{inventory_hostname}}.backup"
