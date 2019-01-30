@@ -1,0 +1,34 @@
+[routers:children]
+cisco
+juniper
+arista
+
+[routers:vars]
+ansible_ssh_private_key_file=/home/student1/.ssh/aws-private.pem
+
+[cisco]
+rtr1 ansible_host=35.182.95.156 private_ip=172.16.66.39
+
+[juniper]
+rtr3 ansible_host=35.183.65.165 private_ip=172.16.172.11
+
+[arista]
+rtr2 ansible_host=35.183.81.37 private_ip=172.17.2.86
+rtr4 ansible_host=35.182.145.28 private_ip=172.17.154.1
+
+[cisco:vars]
+ansible_user=ec2-user
+ansible_network_os=ios
+ansible_connection=network_cli
+
+[juniper:vars]
+ansible_user=jnpr
+ansible_network_os=junos
+ansible_connection=netconf
+
+[arista:vars]
+ansible_user=ec2-user
+ansible_network_os=eos
+ansible_connection=network_cli
+ansible_become=true
+ansible_become_method=enable
