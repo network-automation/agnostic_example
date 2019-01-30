@@ -1,5 +1,5 @@
 # Ansible Network Automation - Agnostic Examples
-  This example shows [cli_command](https://docs.ansible.com/ansible/latest/modules/cli_command_module.html) and [cli_config agnostic](https://docs.ansible.com/ansible/latest/modules/cli_config_module.html) network automation modules for the network_cli connection plugin
+  This Github repository is for showcasing [cli_command](https://docs.ansible.com/ansible/latest/modules/cli_command_module.html) and [cli_config](https://docs.ansible.com/ansible/latest/modules/cli_config_module.html) agnostic network automation modules for the [network_cli connection plugin](https://docs.ansible.com/ansible/latest/plugins/connection/network_cli.html).
 
 ## Playbooks
 
