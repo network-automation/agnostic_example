@@ -24,7 +24,7 @@ ansible_connection=network_cli
 [juniper:vars]
 ansible_user=jnpr
 ansible_network_os=junos
-ansible_connection=netconf
+ansible_connection=network_cli
 
 [arista:vars]
 ansible_user=ec2-user
