@@ -10,7 +10,7 @@
         command: "{{backup}}"
       register: backup
 
-    - name: PRINT TO TERMINAL WINDOW
+    - name: MOVE TO FILE
       copy:
         content: "{{backup.stdout}}"
         dest: "{{inventory_hostname}}.backup"
