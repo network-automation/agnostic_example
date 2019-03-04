@@ -16,4 +16,3 @@
     - name: SAVE CONFIGURATION
       cli_command:
         command: "{{save}}"
-      register: backup
