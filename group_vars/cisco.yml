@@ -1,2 +1,4 @@
 show_interfaces: "show ip interface brief"
 backup: "show running-config"
+save: "write config"
+ntp_commands: ntp server 192.168.1.1
